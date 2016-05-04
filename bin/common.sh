@@ -84,6 +84,8 @@ Please check that the version ${playVersion} is correct in your conf/dependencie
 
   tar cvzf ${playTarFile} -C tmp/ .play > /dev/null 2>&1
   rm -fr tmp/
+  rm -fr ${playUnzipDir}
+  rm ${playZipFile}
 }
 
 validate_play_version() {
